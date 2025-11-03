@@ -3,41 +3,50 @@ import React from 'react';
 const CongressVII: React.FC = () => {
     return (
         <div className="animate-[fadeIn_0.6s_ease-in]">
-            <div className="text-center mb-8">
-                <h2 className="text-3xl md:text-5xl font-bold mb-3 bg-gradient-to-r from-vn-yellow-400 to-vn-yellow-600 bg-clip-text text-transparent">
-                    Đại hội đại biểu toàn quốc lần thứ VII
-                </h2>
-                <p className="text-xl md:text-2xl text-vn-red-400 font-semibold">(1991 - 1996)</p>
-                <div className="mt-4 inline-block bg-gradient-to-r from-vn-red-700 to-vn-red-800 text-white px-6 py-2 rounded-full shadow-lg border border-vn-yellow-500">
-                    <span className="font-bold">"Đại hội của trí tuệ - đổi mới, dân chủ - kỷ cương - đoàn kết"</span>
+            <div className="text-center mb-8 animate-[slideInDown_0.8s_ease-out]">
+                <div className="inline-flex items-center justify-center mb-4">
+                    <div className="text-vn-yellow-600 text-5xl mr-3 animate-[float_3s_ease-in-out_infinite]">★</div>
+                    <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-vn-yellow-400 to-vn-yellow-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-500 cursor-default">
+                        Đại hội đại biểu toàn quốc lần thứ VII
+                    </h2>
+                    <div className="text-vn-yellow-600 text-5xl ml-3 animate-[float_3s_ease-in-out_infinite_1.5s]">★</div>
+                </div>
+                <p className="text-xl md:text-2xl text-vn-red-400 font-semibold hover:text-vn-red-300 transition-colors duration-300">(1991 - 1996)</p>
+                <div className="mt-4 inline-block bg-gradient-to-r from-vn-red-700 to-vn-red-800 text-white px-6 py-2 rounded-full shadow-lg border border-vn-yellow-500 hover:shadow-vn-yellow-500/70 transition-all duration-500 hover:scale-105 group overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-vn-red-800 to-vn-red-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <span className="font-bold relative z-10">"Đại hội của trí tuệ - đổi mới, dân chủ - kỷ cương - đoàn kết"</span>
                 </div>
             </div>
 
             {/* Hình ảnh và Video */}
             <div className="mb-8 grid md:grid-cols-2 gap-6">
-                <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-red-600">
-                    <img
-                        src="https://cdn.baohatinh.vn/images/944cd9e6912bec98ccfb039520b2a7d2311d0a805c46aa736d570815b903bad11c3491950dfff16c2db46b85e568b690/dang-jpg8.jpg"
-                        alt="Đại hội VII"
-                        className="w-full h-auto object-cover"
-                    />
-                    <div className="bg-vn-red-600 text-white p-3 text-center font-semibold">
+                <div className="group rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-red-600 hover:border-vn-red-400 transition-all duration-500 hover:shadow-vn-red-600/70 hover:-translate-y-2 hover:scale-105 animate-[slideInLeft_0.8s_ease-out]">
+                    <div className="overflow-hidden">
+                        <img
+                            src="https://cdn.baohatinh.vn/images/944cd9e6912bec98ccfb039520b2a7d2311d0a805c46aa736d570815b903bad11c3491950dfff16c2db46b85e568b690/dang-jpg8.jpg"
+                            alt="Đại hội VII"
+                            className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700"
+                        />
+                    </div>
+                    <div className="bg-vn-red-600 text-white p-3 text-center font-semibold group-hover:bg-vn-red-500 transition-colors duration-300">
                         Ban chấp hành Trung ương Đại hội VII
                     </div>
                 </div>
-                <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-red-600">
-                    <img
-                        src="https://file3.qdnd.vn/data/images/0/2025/01/30/upload_2105/2.jpg?dpi=150&quality=100&w=870"
-                        alt="Đồng chí Đỗ Mười và các đại biểu"
-                        className="w-full h-auto object-cover"
-                    />
-                    <div className="bg-vn-red-600 text-white p-3 text-center font-semibold">
+                <div className="group rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-red-600 hover:border-vn-red-400 transition-all duration-500 hover:shadow-vn-red-600/70 hover:-translate-y-2 hover:scale-105 animate-[slideInRight_0.8s_ease-out]">
+                    <div className="overflow-hidden">
+                        <img
+                            src="https://file3.qdnd.vn/data/images/0/2025/01/30/upload_2105/2.jpg?dpi=150&quality=100&w=870"
+                            alt="Đồng chí Đỗ Mười và các đại biểu"
+                            className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700"
+                        />
+                    </div>
+                    <div className="bg-vn-red-600 text-white p-3 text-center font-semibold group-hover:bg-vn-red-500 transition-colors duration-300">
                         Đồng chí Đỗ Mười và các đại biểu dự Đại hội VII
                     </div>
                 </div>
             </div>
 
-            <div className="mb-8 rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-yellow-600">
+            <div className="mb-8 group rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-yellow-600 hover:border-vn-yellow-400 transition-all duration-500 hover:shadow-vn-yellow-600/70 hover:-translate-y-2 hover:scale-105 animate-[slideInUp_0.8s_ease-out]">
                 <div className="relative pb-[56.25%]">
                     <iframe
                         className="absolute top-0 left-0 w-full h-full"
@@ -48,14 +57,14 @@ const CongressVII: React.FC = () => {
                         allowFullScreen
                     ></iframe>
                 </div>
-                <div className="bg-vn-yellow-600 text-gray-100 p-3 text-center font-semibold">
+                <div className="bg-vn-yellow-600 text-gray-100 p-3 text-center font-semibold group-hover:bg-vn-yellow-500 transition-colors duration-300">
                     Video tư liệu Đại hội VII
                 </div>
             </div>
 
-            <div className="mb-8 p-6 md:p-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-l-8 border-vn-red-600 shadow-xl">
+            <div className="mb-8 p-6 md:p-8 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border-l-8 border-vn-red-600 shadow-xl hover:border-vn-red-400 hover:shadow-vn-red-600/50 transition-all duration-500 hover:scale-[1.02] animate-[slideInUp_0.8s_ease-out]">
                 <div className="flex items-center mb-6">
-                    <div className="bg-vn-red-600 text-white p-4 rounded-full mr-4">
+                    <div className="bg-vn-red-600 text-white p-4 rounded-full mr-4 hover:bg-vn-red-500 hover:scale-110 hover:rotate-12 transition-all duration-500">
                         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
@@ -105,36 +114,37 @@ const CongressVII: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="mt-6 p-4 bg-gradient-to-r from-vn-red-700 to-vn-red-800 rounded-lg border-2 border-vn-yellow-500">
-                    <p className="text-center text-white font-semibold italic">
-                        ⚠️ Yêu cầu <strong className="text-vn-yellow-300">tiếp tục đổi mới</strong> và <strong className="text-vn-yellow-300">hoạch định con đường</strong> phát triển đất nước đặt ra cấp thiết
+                <div className="mt-6 p-4 bg-gradient-to-r from-vn-red-700 to-vn-red-800 rounded-lg border-2 border-vn-yellow-500 hover:shadow-vn-yellow-500/70 transition-all duration-500 hover:scale-[1.02] group overflow-hidden relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-vn-red-800 to-vn-red-700 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    <p className="text-center text-white font-semibold italic relative z-10">
+                        <span className="animate-[float_1.5s_ease-in-out_infinite] inline-block">⚠️</span> Yêu cầu <strong className="text-vn-yellow-300">tiếp tục đổi mới</strong> và <strong className="text-vn-yellow-300">hoạch định con đường</strong> phát triển đất nước đặt ra cấp thiết
                     </p>
                 </div>
             </div>
 
-            <div className="mb-8 p-6 md:p-8 bg-gray-800 rounded-2xl shadow-2xl border-t-8 border-vn-yellow-600">
+            <div className="mb-8 p-6 md:p-8 bg-gray-800 rounded-2xl shadow-2xl border-t-8 border-vn-yellow-600 hover:border-vn-yellow-400 hover:shadow-vn-yellow-600/50 transition-all duration-500 animate-[slideInUp_0.8s_ease-out]">
                 <div className="flex items-center mb-6">
-                    <div className="bg-vn-yellow-600 text-gray-100 p-4 rounded-full mr-4">
+                    <div className="bg-vn-yellow-600 text-gray-100 p-4 rounded-full mr-4 hover:bg-vn-yellow-500 hover:scale-110 hover:rotate-12 transition-all duration-500">
                         <span className="text-3xl">📋</span>
                     </div>
-                    <h3 className="text-3xl font-bold text-vn-yellow-400">Nội dung chủ yếu của Đại hội VII</h3>
+                    <h3 className="text-3xl font-bold text-vn-yellow-400 hover:text-vn-yellow-300 transition-colors duration-300">Nội dung chủ yếu của Đại hội VII</h3>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-4 mb-8">
-                    <div className="bg-gradient-to-br from-vn-red-600 to-vn-red-700 text-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all">
-                        <div className="text-4xl mb-2">📅</div>
+                    <div className="group bg-gradient-to-br from-vn-red-600 to-vn-red-700 text-white p-6 rounded-xl shadow-lg text-center transform hover:scale-110 hover:-translate-y-2 transition-all duration-500 hover:shadow-vn-red-600/70 animate-[slideInLeft_0.8s_ease-out]">
+                        <div className="text-4xl mb-2 group-hover:animate-[float_2s_ease-in-out_infinite]">📅</div>
                         <div className="font-bold text-lg mb-1">Thời gian</div>
                         <div className="text-sm">24-27/6/1991</div>
                         <div className="text-xs mt-2 opacity-90">Thủ đô Hà Nội</div>
                     </div>
-                    <div className="bg-gradient-to-br from-vn-yellow-600 to-yellow-500 text-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all border-2 border-yellow-400">
-                        <div className="text-4xl mb-2">👥</div>
+                    <div className="group bg-gradient-to-br from-vn-yellow-600 to-yellow-500 text-white p-6 rounded-xl shadow-lg text-center transform hover:scale-110 hover:-translate-y-2 transition-all duration-500 border-2 border-yellow-400 hover:shadow-vn-yellow-600/70 animate-[slideInUp_0.8s_ease-out]">
+                        <div className="text-4xl mb-2 group-hover:animate-[float_2s_ease-in-out_infinite]">👥</div>
                         <div className="font-bold text-lg mb-1">Đại biểu</div>
                         <div className="text-sm font-bold">1.176 đại biểu</div>
                         <div className="text-xs mt-2">Hơn 2 triệu đảng viên</div>
                     </div>
-                    <div className="bg-gradient-to-br from-vn-red-600 to-vn-red-700 text-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition-all">
-                        <div className="text-4xl mb-2">⭐</div>
+                    <div className="group bg-gradient-to-br from-vn-red-600 to-vn-red-700 text-white p-6 rounded-xl shadow-lg text-center transform hover:scale-110 hover:-translate-y-2 transition-all duration-500 hover:shadow-vn-red-600/70 animate-[slideInRight_0.8s_ease-out]">
+                        <div className="text-4xl mb-2 group-hover:animate-[float_2s_ease-in-out_infinite]">⭐</div>
                         <div className="font-bold text-lg mb-1">Tổng Bí thư</div>
                         <div className="text-sm font-bold">Đỗ Mười</div>
                         <div className="text-xs mt-2 opacity-90">Ban chấp hành TW: 146 UV</div>

@@ -4,31 +4,33 @@ const CongressVI: React.FC = () => {
   return (
     <div className="animate-[fadeIn_0.6s_ease-in]">
       {/* Header với icon */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 animate-[slideInDown_0.8s_ease-out]">
         <div className="inline-flex items-center justify-center mb-4">
-          <div className="text-vn-yellow-600 text-5xl mr-3 animate-pulse">★</div>
-          <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-vn-yellow-400 to-vn-yellow-600 bg-clip-text text-transparent">
+          <div className="text-vn-yellow-600 text-5xl mr-3 animate-[float_3s_ease-in-out_infinite]">★</div>
+          <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-vn-yellow-400 to-vn-yellow-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-500 cursor-default">
             Đại hội đại biểu toàn quốc lần thứ VI
           </h2>
-          <div className="text-vn-yellow-600 text-5xl ml-3 animate-pulse">★</div>
+          <div className="text-vn-yellow-600 text-5xl ml-3 animate-[float_3s_ease-in-out_infinite_1.5s]">★</div>
         </div>
-        <p className="text-xl md:text-2xl font-semibold text-vn-red-400">(1986 - 1991)</p>
-        <div className="h-1 w-48 bg-gradient-to-r from-vn-red-600 to-vn-yellow-600 mx-auto mt-4 rounded-full"></div>
+        <p className="text-xl md:text-2xl font-semibold text-vn-red-400 hover:text-vn-red-300 transition-colors duration-300">(1986 - 1991)</p>
+        <div className="h-1 w-48 bg-gradient-to-r from-vn-red-600 to-vn-yellow-600 mx-auto mt-4 rounded-full transition-all duration-700 hover:w-64 hover:h-2 hover:shadow-lg hover:shadow-vn-yellow-600/50"></div>
       </div>
 
       {/* Hình ảnh và Video */}
       <div className="mb-10 grid md:grid-cols-2 gap-6">
-        <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-red-600">
-          <img 
-            src="https://dienbientv.vn/dataimages/202101/original/images2993470_c702a839bd99f082a51e57df86a03100_15912803337001729186861.jpg" 
-            alt="Đại hội VI"
-            className="w-full h-auto object-cover"
-          />
-          <div className="bg-vn-red-600 text-white p-3 text-center font-semibold">
+        <div className="group rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-red-600 hover:border-vn-red-400 transition-all duration-500 hover:shadow-vn-red-600/70 hover:-translate-y-2 hover:scale-105 animate-[slideInLeft_0.8s_ease-out]">
+          <div className="overflow-hidden">
+            <img 
+              src="https://dienbientv.vn/dataimages/202101/original/images2993470_c702a839bd99f082a51e57df86a03100_15912803337001729186861.jpg" 
+              alt="Đại hội VI"
+              className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700"
+            />
+          </div>
+          <div className="bg-vn-red-600 text-white p-3 text-center font-semibold group-hover:bg-vn-red-500 transition-colors duration-300">
             Đại hội đại biểu toàn quốc lần thứ VI
           </div>
         </div>
-        <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-yellow-600">
+        <div className="group rounded-2xl overflow-hidden shadow-2xl border-4 border-vn-yellow-600 hover:border-vn-yellow-400 transition-all duration-500 hover:shadow-vn-yellow-600/70 hover:-translate-y-2 hover:scale-105 animate-[slideInRight_0.8s_ease-out]">
           <div className="relative pb-[56.25%]">
             <iframe
               className="absolute top-0 left-0 w-full h-full"
@@ -39,34 +41,34 @@ const CongressVI: React.FC = () => {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="bg-vn-yellow-600 text-gray-900 p-3 text-center font-semibold">
+          <div className="bg-vn-yellow-600 text-gray-900 p-3 text-center font-semibold group-hover:bg-vn-yellow-500 transition-colors duration-300">
             Video tư liệu Đại hội VI
           </div>
         </div>
       </div>
       
       {/* Hoàn cảnh lịch sử */}
-      <div className="mb-10 p-6 md:p-8 bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 rounded-2xl border-l-4 border-vn-red-600 shadow-lg">
-        <h3 className="text-2xl md:text-3xl font-bold text-vn-yellow-400 mb-6 flex items-center">
-          <span className="text-vn-yellow-600 text-3xl mr-3">📖</span>
+      <div className="mb-10 p-6 md:p-8 bg-gradient-to-br from-gray-800 via-gray-900 to-gray-800 rounded-2xl border-l-4 border-vn-red-600 shadow-lg hover:shadow-vn-red-600/50 transition-all duration-500 hover:scale-[1.02] animate-[slideInUp_0.8s_ease-out]">
+        <h3 className="text-2xl md:text-3xl font-bold text-vn-yellow-400 mb-6 flex items-center hover:text-vn-yellow-300 transition-colors duration-300">
+          <span className="text-vn-yellow-600 text-3xl mr-3 animate-[float_2s_ease-in-out_infinite]">📖</span>
           Hoàn cảnh lịch sử
         </h3>
         
         {/* Bối cảnh thế giới */}
-        <div className="mb-6 p-4 bg-gray-800 rounded-xl shadow-md border-l-4 border-orange-400">
-          <h4 className="text-lg font-bold text-orange-400 mb-3 flex items-center">
-            <span className="mr-2">🌍</span> Bối cảnh thế giới
+        <div className="mb-6 p-4 bg-gray-800 rounded-xl shadow-md border-l-4 border-orange-400 hover:border-orange-300 transition-all duration-500 hover:shadow-orange-400/50 hover:-translate-x-2">
+          <h4 className="text-lg font-bold text-orange-400 mb-3 flex items-center hover:text-orange-300 transition-colors duration-300">
+            <span className="mr-2 animate-[float_2.5s_ease-in-out_infinite]">🌍</span> Bối cảnh thế giới
           </h4>
           <ul className="space-y-2 text-gray-300 leading-relaxed">
-            <li className="flex items-start">
+            <li className="flex items-start hover:translate-x-2 transition-transform duration-300 hover:text-gray-100">
               <span className="text-vn-yellow-600 mr-2 font-bold">•</span>
               <span>Cuộc cách mạng khoa học - kỹ thuật lần thứ hai phát triển mạnh mẽ</span>
             </li>
-            <li className="flex items-start">
+            <li className="flex items-start hover:translate-x-2 transition-transform duration-300 hover:text-gray-100">
               <span className="text-vn-yellow-600 mr-2 font-bold">•</span>
               <span>Xu thế hòa bình, đổi mới phát triển kinh tế ở nhiều nước</span>
             </li>
-            <li className="flex items-start">
+            <li className="flex items-start hover:translate-x-2 transition-transform duration-300 hover:text-gray-100">
               <span className="text-vn-yellow-600 mr-2 font-bold">•</span>
               <span>Công cuộc cải tổ ở Liên Xô và các nước XHCN Đông Âu lún sâu vào khủng hoảng, trì trệ</span>
             </li>
@@ -74,35 +76,36 @@ const CongressVI: React.FC = () => {
         </div>
 
         {/* Tình hình trong nước */}
-        <div className="p-4 bg-gray-800 rounded-xl shadow-md border-l-4 border-vn-red-600">
-          <h4 className="text-lg font-bold text-vn-yellow-400 mb-3 flex items-center">
-            <span className="mr-2">🇻🇳</span> Tình hình trong nước
+        <div className="p-4 bg-gray-800 rounded-xl shadow-md border-l-4 border-vn-red-600 hover:border-vn-red-400 transition-all duration-500 hover:shadow-vn-red-600/50 hover:-translate-x-2">
+          <h4 className="text-lg font-bold text-vn-yellow-400 mb-3 flex items-center hover:text-vn-yellow-300 transition-colors duration-300">
+            <span className="mr-2 animate-[float_2.5s_ease-in-out_infinite]">🇻🇳</span> Tình hình trong nước
           </h4>
           <div className="space-y-4">
             <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-4 rounded-lg border-2 border-vn-red-300">
-                <p className="text-sm text-gray-300 mb-1">Tăng trưởng GDP (1976-1980)</p>
-                <p className="text-3xl font-bold text-vn-red-400">1,6%</p>
-                <p className="text-xs text-gray-400 mt-1">Không đủ tiêu dùng</p>
+              <div className="group bg-gradient-to-br from-gray-700 to-gray-800 p-4 rounded-lg border-2 border-vn-red-300 hover:border-vn-red-400 transition-all duration-500 hover:shadow-lg hover:shadow-vn-red-400/50 hover:scale-105 cursor-pointer">
+                <p className="text-sm text-gray-300 mb-1 group-hover:text-gray-100 transition-colors duration-300">Tăng trưởng GDP (1976-1980)</p>
+                <p className="text-3xl font-bold text-vn-red-400 group-hover:text-vn-red-300 transition-all duration-300 group-hover:scale-110">1,6%</p>
+                <p className="text-xs text-gray-400 mt-1 group-hover:text-gray-300 transition-colors duration-300">Không đủ tiêu dùng</p>
               </div>
-              <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-4 rounded-lg border-2 border-vn-red-300">
-                <p className="text-sm text-gray-300 mb-1">Lạm phát năm 1986</p>
-                <p className="text-3xl font-bold text-vn-red-400">774%</p>
-                <p className="text-xs text-gray-400 mt-1">Tăng từ 300% (1985)</p>
+              <div className="group bg-gradient-to-br from-gray-700 to-gray-800 p-4 rounded-lg border-2 border-vn-red-300 hover:border-vn-red-400 transition-all duration-500 hover:shadow-lg hover:shadow-vn-red-400/50 hover:scale-105 cursor-pointer">
+                <p className="text-sm text-gray-300 mb-1 group-hover:text-gray-100 transition-colors duration-300">Lạm phát năm 1986</p>
+                <p className="text-3xl font-bold text-vn-red-400 group-hover:text-vn-red-300 transition-all duration-300 group-hover:scale-110">774%</p>
+                <p className="text-xs text-gray-400 mt-1 group-hover:text-gray-300 transition-colors duration-300">Tăng từ 300% (1985)</p>
               </div>
             </div>
             
-            <div className="bg-gray-800 p-4 rounded-lg">
-              <p className="text-gray-100 leading-relaxed">
+            <div className="bg-gray-800 p-4 rounded-lg hover:bg-gray-750 transition-all duration-300 hover:shadow-lg">
+              <p className="text-gray-100 leading-relaxed hover:text-gray-50 transition-colors duration-300">
                 <strong className="text-vn-red-400">Thực trạng:</strong> Lương thực, thực phẩm, hàng tiêu dùng khan hiếm; 
                 xuất hiện nhiều tiêu cực, vi phạm pháp luật; các thế lực thù địch tăng cường bao vây, cấm vận, 
                 kích động vượt biên trái phép.
               </p>
             </div>
             
-            <div className="bg-gradient-to-r from-vn-yellow-600 to-vn-red-600 p-4 rounded-lg border-l-4 border-vn-yellow-400 border-2">
-              <p className="text-white font-semibold">
-                ⚠️ <strong>Yêu cầu cấp thiết:</strong> Đổi mới để đưa đất nước thoát khỏi khủng hoảng kinh tế - xã hội!
+            <div className="relative bg-gradient-to-r from-vn-yellow-600 to-vn-red-600 p-4 rounded-lg border-l-4 border-vn-yellow-400 border-2 overflow-hidden hover:shadow-xl hover:shadow-vn-yellow-600/50 transition-all duration-500 hover:scale-[1.02] group">
+              <div className="absolute inset-0 bg-gradient-to-r from-vn-red-600 to-vn-yellow-600 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <p className="text-white font-semibold relative z-10">
+                <span className="animate-[float_1.5s_ease-in-out_infinite] inline-block">⚠️</span> <strong>Yêu cầu cấp thiết:</strong> Đổi mới để đưa đất nước thoát khỏi khủng hoảng kinh tế - xã hội!
               </p>
             </div>
           </div>
@@ -110,25 +113,26 @@ const CongressVI: React.FC = () => {
       </div>
 
       {/* Nội dung chủ yếu */}
-      <div className="mb-10 p-6 md:p-8 bg-gray-800 rounded-2xl shadow-2xl border-t-4 border-vn-yellow-600">
-        <h3 className="text-2xl md:text-3xl font-bold text-vn-yellow-400 mb-6 flex items-center">
-          <span className="text-vn-yellow-600 text-3xl mr-3">📋</span>
+      <div className="mb-10 p-6 md:p-8 bg-gray-800 rounded-2xl shadow-2xl border-t-4 border-vn-yellow-600 hover:border-vn-yellow-400 transition-all duration-500 hover:shadow-vn-yellow-600/50 animate-[slideInUp_0.8s_ease-out]">
+        <h3 className="text-2xl md:text-3xl font-bold text-vn-yellow-400 mb-6 flex items-center hover:text-vn-yellow-300 transition-colors duration-300">
+          <span className="text-vn-yellow-600 text-3xl mr-3 animate-[float_2s_ease-in-out_infinite]">📋</span>
           Nội dung chủ yếu của Đại hội VI
         </h3>
         
         {/* Thông tin Đại hội */}
-        <div className="bg-gradient-to-r from-vn-red-700 via-vn-red-600 to-vn-yellow-700 p-5 md:p-7 rounded-2xl mb-8 shadow-lg border-2 border-vn-yellow-500">
-          <div className="grid md:grid-cols-3 gap-4 text-center">
-            <div>
+        <div className="relative bg-gradient-to-r from-vn-red-700 via-vn-red-600 to-vn-yellow-700 p-5 md:p-7 rounded-2xl mb-8 shadow-lg border-2 border-vn-yellow-500 overflow-hidden group hover:shadow-vn-yellow-500/70 transition-all duration-500 hover:scale-[1.02]">
+          <div className="absolute inset-0 bg-gradient-to-r from-vn-yellow-700 via-vn-red-600 to-vn-red-700 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+          <div className="grid md:grid-cols-3 gap-4 text-center relative z-10">
+            <div className="hover:scale-110 transition-transform duration-300">
               <p className="text-sm text-gray-200 mb-1">⏰ Thời gian</p>
               <p className="text-lg md:text-xl font-bold text-white">15-18/12/1986</p>
               <p className="text-sm text-gray-200">Hà Nội</p>
             </div>
-            <div>
+            <div className="hover:scale-110 transition-transform duration-300">
               <p className="text-sm text-gray-200 mb-1">👤 Tổng Bí thư</p>
               <p className="text-lg md:text-xl font-bold text-white">Nguyễn Văn Linh</p>
             </div>
-            <div>
+            <div className="hover:scale-110 transition-transform duration-300">
               <p className="text-sm text-gray-200 mb-1">👥 Ban chấp hành TW</p>
               <p className="text-lg md:text-xl font-bold text-white">124 UV chính thức</p>
             </div>
@@ -136,68 +140,69 @@ const CongressVI: React.FC = () => {
         </div>
 
         {/* Tinh thần Đại hội */}
-        <div className="mb-8 p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border-l-4 border-vn-yellow-600 shadow-md">
-          <h4 className="text-xl font-bold text-vn-yellow-400 mb-3 flex items-center">
-            <span className="text-vn-red-500 text-2xl mr-2">💬</span>
+        <div className="mb-8 p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border-l-4 border-vn-yellow-600 shadow-md hover:border-vn-yellow-400 hover:shadow-vn-yellow-600/50 transition-all duration-500 hover:-translate-x-2">
+          <h4 className="text-xl font-bold text-vn-yellow-400 mb-3 flex items-center hover:text-vn-yellow-300 transition-colors duration-300">
+            <span className="text-vn-red-500 text-2xl mr-2 animate-[float_2s_ease-in-out_infinite]">💬</span>
             Tinh thần Đại hội
           </h4>
-          <div className="bg-gray-900 p-4 rounded-lg border-2 border-vn-yellow-400">
-            <p className="text-lg text-vn-yellow-300 italic leading-relaxed text-center font-semibold">
+          <div className="relative bg-gray-900 p-4 rounded-lg border-2 border-vn-yellow-400 overflow-hidden group hover:border-vn-yellow-300 transition-all duration-500">
+            <div className="absolute inset-0 bg-gradient-to-r from-vn-yellow-900/20 to-vn-red-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <p className="text-lg text-vn-yellow-300 italic leading-relaxed text-center font-semibold relative z-10 group-hover:scale-105 transition-transform duration-500">
               "Nhìn thẳng vào sự thật, đánh giá đúng sự thật và nói ra sự thật"
             </p>
           </div>
-          <p className="text-gray-300 mt-3 leading-relaxed">
+          <p className="text-gray-300 mt-3 leading-relaxed hover:text-gray-100 transition-colors duration-300">
             Đại hội thẳng thắn chỉ ra những hạn chế, khuyết điểm trong lãnh đạo của Đảng giai đoạn 1975-1986
           </p>
         </div>
         
         {/* 4 Bài học lớn */}
         <div className="mb-8">
-          <h4 className="text-xl md:text-2xl font-bold text-gray-100 mb-5 flex items-center">
-            <span className="text-vn-yellow-600 text-3xl mr-3">⭐</span> 
+          <h4 className="text-xl md:text-2xl font-bold text-gray-100 mb-5 flex items-center hover:text-vn-yellow-400 transition-colors duration-300">
+            <span className="text-vn-yellow-600 text-3xl mr-3 animate-[float_2s_ease-in-out_infinite]">⭐</span> 
             4 Bài học lớn
           </h4>
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-5 rounded-xl shadow-lg border-l-4 border-vn-red-600 hover:shadow-2xl transition-all">
+            <div className="group bg-gradient-to-br from-gray-800 to-gray-900 p-5 rounded-xl shadow-lg border-l-4 border-vn-red-600 hover:shadow-2xl hover:shadow-vn-red-600/50 transition-all duration-500 hover:-translate-y-2 hover:scale-105 hover:border-vn-red-400 animate-[slideInLeft_0.8s_ease-out]">
               <div className="flex items-start">
-                <span className="text-3xl font-bold text-vn-red-500 mr-3">1</span>
+                <span className="text-3xl font-bold text-vn-red-500 mr-3 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">1</span>
                 <div>
-                  <p className="text-gray-200 leading-relaxed">
+                  <p className="text-gray-200 leading-relaxed group-hover:text-gray-100 transition-colors duration-300">
                     Trong toàn bộ hoạt động, Đảng phải quán triệt tư tưởng 
-                    <strong className="text-vn-yellow-400 block mt-1 text-lg">"Lấy dân làm gốc"</strong>
+                    <strong className="text-vn-yellow-400 block mt-1 text-lg group-hover:text-vn-yellow-300 transition-colors duration-300">"Lấy dân làm gốc"</strong>
                   </p>
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-5 rounded-xl shadow-lg border-l-4 border-vn-red-600 hover:shadow-2xl transition-all">
+            <div className="group bg-gradient-to-br from-gray-800 to-gray-900 p-5 rounded-xl shadow-lg border-l-4 border-vn-red-600 hover:shadow-2xl hover:shadow-vn-red-600/50 transition-all duration-500 hover:-translate-y-2 hover:scale-105 hover:border-vn-red-400 animate-[slideInRight_0.8s_ease-out] [animation-delay:0.1s]">
               <div className="flex items-start">
-                <span className="text-3xl font-bold text-vn-red-500 mr-3">2</span>
+                <span className="text-3xl font-bold text-vn-red-500 mr-3 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">2</span>
                 <div>
-                  <p className="text-gray-200 leading-relaxed">
+                  <p className="text-gray-200 leading-relaxed group-hover:text-gray-100 transition-colors duration-300">
                     Đảng phải luôn luôn xuất phát từ thực tế, tôn trọng và hành động theo 
-                    <strong className="text-vn-yellow-400"> quy luật khách quan</strong>
+                    <strong className="text-vn-yellow-400 group-hover:text-vn-yellow-300 transition-colors duration-300"> quy luật khách quan</strong>
                   </p>
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-5 rounded-xl shadow-lg border-l-4 border-vn-red-600 hover:shadow-2xl transition-all">
+            <div className="group bg-gradient-to-br from-gray-800 to-gray-900 p-5 rounded-xl shadow-lg border-l-4 border-vn-red-600 hover:shadow-2xl hover:shadow-vn-red-600/50 transition-all duration-500 hover:-translate-y-2 hover:scale-105 hover:border-vn-red-400 animate-[slideInLeft_0.8s_ease-out] [animation-delay:0.2s]">
               <div className="flex items-start">
-                <span className="text-3xl font-bold text-vn-red-500 mr-3">3</span>
+                <span className="text-3xl font-bold text-vn-red-500 mr-3 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">3</span>
                 <div>
-                  <p className="text-gray-200 leading-relaxed">
+                  <p className="text-gray-200 leading-relaxed group-hover:text-gray-100 transition-colors duration-300">
                     Phải biết kết hợp 
-                    <strong className="text-vn-yellow-400"> sức mạnh dân tộc với sức mạnh thời đại </strong> 
+                    <strong className="text-vn-yellow-400 group-hover:text-vn-yellow-300 transition-colors duration-300"> sức mạnh dân tộc với sức mạnh thời đại </strong> 
                     trong điều kiện mới
                   </p>
                 </div>
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-gray-800 to-gray-900 p-5 rounded-xl shadow-lg border-l-4 border-vn-red-600 hover:shadow-2xl transition-all">
+            <div className="group bg-gradient-to-br from-gray-800 to-gray-900 p-5 rounded-xl shadow-lg border-l-4 border-vn-red-600 hover:shadow-2xl hover:shadow-vn-red-600/50 transition-all duration-500 hover:-translate-y-2 hover:scale-105 hover:border-vn-red-400 animate-[slideInRight_0.8s_ease-out] [animation-delay:0.3s]">
               <div className="flex items-start">
-                <span className="text-3xl font-bold text-vn-red-500 mr-3">4</span>
+                <span className="text-3xl font-bold text-vn-red-500 mr-3 group-hover:scale-125 group-hover:rotate-12 transition-all duration-500">4</span>
                 <div>
                   <p className="text-gray-200 leading-relaxed">
                     Chăm lo xây dựng Đảng ngang tầm với một 
