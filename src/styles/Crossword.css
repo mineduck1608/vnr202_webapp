@@ -1,0 +1,1058 @@
+/* Crossword Main Container */
+.crossword-container {
+  text-align: center;
+  padding: 2rem;
+  color: white;
+}
+
+.crossword-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.crossword-subtitle {
+  font-size: 1.2rem;
+  color: #d1d5db;
+  margin-bottom: 3rem;
+}
+
+/* View Selector */
+.view-selector {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.view-button {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border: 2px solid #374151;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 280px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.view-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.3);
+  border-color: #ef4444;
+}
+
+.teacher-button:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+}
+
+.button-icon {
+  font-size: 4rem;
+}
+
+.button-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.button-desc {
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+/* Teacher View */
+.crossword-teacher {
+  color: white;
+}
+
+.teacher-header,
+.student-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.back-button {
+  background: #374151;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background: #4b5563;
+  transform: translateX(-3px);
+}
+
+.teacher-title,
+.student-title {
+  font-size: 2rem;
+  font-weight: bold;
+  flex: 1;
+  text-align: center;
+}
+
+/* Timer Section */
+.timer-section {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border: 2px solid #374151;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.timer-display {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #10b981;
+  transition: all 0.3s ease;
+}
+
+.timer-warning {
+  color: #f59e0b;
+  animation: pulse 1s infinite;
+}
+
+.timer-expired {
+  color: #ef4444;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.timer-icon {
+  font-size: 4rem;
+}
+
+.timer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.timer-label {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+.timer-value {
+  font-size: 3.5rem;
+  font-family: 'Courier New', monospace;
+}
+
+.timer-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timer-controls .timer-label {
+  font-size: 1.1rem;
+  color: #d1d5db;
+}
+
+.timer-input {
+  background: #374151;
+  border: 2px solid #4b5563;
+  color: white;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  width: 100px;
+  text-align: center;
+}
+
+.start-button {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.start-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(16, 185, 129, 0.4);
+}
+
+/* Clues Section */
+.clues-section {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border: 2px solid #374151;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.clues-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.clues-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.clue-counter {
+  background: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  color: #10b981;
+}
+
+.current-clue {
+  background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+  border: 2px solid #ef4444;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.clue-type-badge {
+  display: inline-block;
+  background: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  width: fit-content;
+}
+
+.clue-number {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #10b981;
+}
+
+.clue-text {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #e5e7eb;
+}
+
+.clue-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-button {
+  background: #374151;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav-button:hover:not(:disabled) {
+  background: #4b5563;
+  transform: scale(1.05);
+}
+
+.nav-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.all-clues {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #374151;
+}
+
+.clues-column {
+  background: #1f2937;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.clues-column-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ef4444;
+  margin-bottom: 1rem;
+}
+
+.clues-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.clue-item {
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background: #374151;
+  border-radius: 0.5rem;
+  line-height: 1.5;
+  transition: all 0.2s ease;
+}
+
+.clue-item:hover {
+  background: #4b5563;
+  transform: translateX(5px);
+}
+
+.clue-number-small {
+  color: #10b981;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Student View */
+.crossword-student {
+  color: white;
+}
+
+.header-left {
+  flex: 1;
+}
+
+.student-title-main {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #ef4444 0%, #f59e0b 50%, #10b981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.student-title-main:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.student-subtitle {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.student-controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.control-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.check-button {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+}
+
+.check-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(16, 185, 129, 0.4);
+}
+
+.clear-button {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+}
+
+.clear-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(239, 68, 68, 0.4);
+}
+
+.teacher-access-button {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.teacher-access-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.teacher-access-button:hover::before {
+  left: 100%;
+}
+
+.teacher-access-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(99, 102, 241, 0.4);
+}
+
+/* Teacher Modal */
+.teacher-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.teacher-modal {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border: 3px solid #6366f1;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.5);
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.teacher-modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.teacher-modal-subtitle {
+  font-size: 1rem;
+  color: #9ca3af;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.teacher-password-input {
+  width: 100%;
+  background: #374151;
+  border: 2px solid #4b5563;
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.teacher-password-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+}
+
+.teacher-modal-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.teacher-modal-button {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button {
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: white;
+}
+
+.login-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(99, 102, 241, 0.5);
+}
+
+.cancel-button {
+  background: #374151;
+  color: white;
+}
+
+.cancel-button:hover {
+  background: #4b5563;
+  transform: scale(1.05);
+}
+
+.teacher-modal-hint {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Crossword Grid */
+.crossword-grid-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.crossword-grid {
+  display: inline-block;
+  border: 3px solid #374151;
+  border-radius: 0.5rem;
+  background: white;
+  padding: 0.5rem;
+}
+
+.crossword-row {
+  display: flex;
+}
+
+.crossword-cell {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #d1d5db;
+  position: relative;
+  background: white;
+  transition: all 0.2s ease;
+}
+
+.black-cell {
+  background: #1f2937;
+}
+
+.selected-cell {
+  background: #dbeafe !important;
+  border: 2px solid #3b82f6 !important;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.correct-cell {
+  background: #d1fae5 !important;
+  animation: correctFlash 0.5s ease;
+}
+
+@keyframes correctFlash {
+  0% {
+    background: #10b981;
+  }
+  100% {
+    background: #d1fae5;
+  }
+}
+
+.cell-number {
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  font-size: 0.6rem;
+  font-weight: bold;
+  color: #1f2937;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cell-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1f2937;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+}
+
+.cell-input:focus {
+  outline: none;
+}
+
+.cell-input:disabled {
+  cursor: default;
+}
+
+/* Instructions */
+.instructions {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border: 2px solid #374151;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.instructions h3 {
+  color: #ef4444;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.instructions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions li {
+  padding: 0.5rem 0;
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.instructions li::before {
+  content: "✓ ";
+  color: #10b981;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .crossword-title {
+    font-size: 1.8rem;
+  }
+
+  .view-selector {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .view-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .teacher-header,
+  .student-header {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .header-left {
+    text-align: center;
+  }
+
+  .student-title-main {
+    font-size: 1.8rem;
+  }
+
+  .teacher-title,
+  .student-title {
+    text-align: center;
+  }
+
+  .timer-value {
+    font-size: 2.5rem;
+  }
+
+  .clue-text {
+    font-size: 1.2rem;
+  }
+
+  .crossword-cell {
+    width: 26px;
+    height: 26px;
+  }
+
+  .cell-input {
+    font-size: 0.8rem;
+  }
+
+  .cell-number {
+    font-size: 0.5rem;
+    top: 1px;
+    left: 2px;
+  }
+
+  .all-clues {
+    grid-template-columns: 1fr;
+  }
+
+  .student-controls {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .control-button {
+    flex: 1;
+    min-width: 100px;
+  }
+
+  .teacher-modal {
+    padding: 2rem;
+  }
+
+  .teacher-modal-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Teacher Crossword Grid Styles */
+.teacher-instructions {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  border: 2px solid #3b82f6;
+}
+
+.teacher-instructions p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: white;
+  text-align: center;
+}
+
+.teacher-crossword-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.teacher-crossword-grid {
+  display: inline-block;
+  background: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.teacher-cell {
+  font-size: 0.9rem;
+  width: 28px;
+  height: 28px;
+}
+
+.teacher-cell-number {
+  font-size: 0.5rem;
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.teacher-cell-letter {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.clickable-cell {
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clickable-cell:hover {
+  background: #fef3c7 !important;
+  transform: scale(1.05);
+  border-color: #f59e0b;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.selected-word-cell {
+  background: #bbf7d0 !important;
+  border-color: #10b981 !important;
+}
+
+/* Question Modal Styles */
+.question-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.question-modal {
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  border: 3px solid #3b82f6;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.3s ease;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.modal-close-button:hover {
+  background: #dc2626;
+  transform: rotate(90deg);
+}
+
+.question-header {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.question-number-badge {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.question-direction-badge {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.question-timer-display {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.timer-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(16, 185, 129, 0.5);
+  animation: pulse 2s infinite;
+}
+
+.timer-value-large {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.timer-warning .timer-circle {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  box-shadow: 0 10px 30px rgba(245, 158, 11, 0.5);
+}
+
+.timer-critical .timer-circle {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.5);
+  animation: shake 0.5s infinite;
+}
+
+.question-content,
+.question-answer {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.question-title,
+.answer-title {
+  color: #60a5fa;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.question-text {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.answer-word {
+  color: #fbbf24;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  margin: 1rem 0;
+}
+
+.answer-length {
+  color: #9ca3af;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Mobile Responsive for Teacher View */
+@media (max-width: 768px) {
+  .teacher-instructions p {
+    font-size: 0.9rem;
+  }
+
+  .teacher-cell {
+    width: 20px;
+    height: 20px;
+    font-size: 0.7rem;
+  }
+
+  .teacher-cell-number {
+    font-size: 0.4rem;
+  }
+
+  .teacher-cell-letter {
+    font-size: 0.65rem;
+  }
+
+  .question-modal {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .question-number-badge,
+  .question-direction-badge {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .timer-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .timer-value-large {
+    font-size: 2rem;
+  }
+
+  .answer-word {
+    font-size: 1.5rem;
+  }
+}

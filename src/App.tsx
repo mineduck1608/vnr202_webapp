@@ -5,6 +5,7 @@ import Overview from './components/Overview';
 import './App.css';
 import CongressVI from './components/CongressVI';
 import CongressVII from './components/CongressVII';
+import Crossword from './components/Crossword';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('overview');
@@ -17,6 +18,8 @@ const App: React.FC = () => {
         return <CongressVI />;
       case 'congress-vii':
         return <CongressVII />;
+      case 'crossword':
+        return <Crossword />;
       default:
         return <Overview />;
     }
