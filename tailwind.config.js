@@ -32,8 +32,42 @@ module.exports = {
           900: '#92400e',
         },
       },
+      // Thêm keyframes cho animation
+      keyframes: {
+        typing: {
+          '0%, 80%, 100%': { transform: 'scale(0.8)', opacity: '0.5' },
+          '40%': { transform: 'scale(1)', opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-5px)' },
+        },
+        fadeIn: {
+          '0%': { opacity: 0, transform: 'translateY(10px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+        slideInDown: {
+          '0%': { opacity: 0, transform: 'translateY(-20px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+      // Thêm khai báo animation
+      animation: {
+        typing: 'typing 1.4s infinite ease-in-out',
+        float: 'float 3s ease-in-out infinite',
+        fadeIn: 'fadeIn 0.6s ease-in',
+        slideInDown: 'slideInDown 0.8s ease-out',
+      },
+      // Thêm animationDelay cho typing indicator
+      animationDelay: { 
+        '200ms': '200ms',
+        '400ms': '400ms',
+      },
     },
   },
-  plugins: [],
+  // Thêm plugins
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 }
-
