@@ -11,6 +11,8 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onNavigate }) =>
     { id: 'congress-vi', label: 'Đại hội VI (1986-1991)' },
     { id: 'congress-vii', label: 'Đại hội VII (1991-1996)' },
     { id: 'crossword', label: 'Crossword' },
+    // ĐÃ THÊM: Nút Hỏi AI
+    { id: 'hcm-ai-chat', label: '💭 Hỏi AI' },
   ];
 
   const handleNavigate = (sectionId: string) => {
@@ -26,6 +28,7 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onNavigate }) =>
   return (
     <nav className="bg-gray-900 shadow-xl sticky top-0 z-50 border-b-4 border-vn-red-600 backdrop-blur-sm bg-opacity-95 transition-all duration-500">
       <ul className="flex justify-center gap-2 md:gap-4 p-4 md:p-6 max-w-6xl mx-auto flex-wrap">
+        {/* Vòng lặp map này bây giờ sẽ tự động hiển thị cả nút "Hỏi AI" */}
         {sections.map((section, index) => (
           <li key={section.id} className="animate-[slideInDown_0.6s_ease-out]" style={{ animationDelay: `${index * 0.1}s` }}>
             <button
