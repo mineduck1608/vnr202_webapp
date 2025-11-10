@@ -11,8 +11,6 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection, onNavigate }) =>
     { id: 'congress-vi', label: 'Đại hội VI (1986-1991)' },
     { id: 'congress-vii', label: 'Đại hội VII (1991-1996)' },
     { id: 'crossword', label: 'Crossword' },
-    // ĐÃ THÊM: Nút Hỏi AI
-    { id: 'hcm-ai-chat', label: '💭 Hỏi AI' },
   ];
 
   const handleNavigate = (sectionId: string) => {
